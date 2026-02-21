@@ -29,7 +29,7 @@ The terminal is the biggest barrier for Linux newcomers. nexterm solves this by 
 │                       │                  │
 │                       │ AI > [ask here ] │
 ├───────────────────────┴──────────────────┤
-│ NORMAL  │  ~  │  cmds: 4  │  14:32:01   │
+│ NORMAL  │  ~  │  cmds: 4  │  14:32:01    │
 └──────────────────────────────────────────┘
 ```
 
