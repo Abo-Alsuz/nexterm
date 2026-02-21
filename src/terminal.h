@@ -13,6 +13,7 @@ public:
 
     GtkWidget* widget() { return m_vte; }
     GtkWidget* ai_bar() { return m_ai_bar; }
+    VteTerminal* vte() { return VTE_TERMINAL(m_vte); }
 
     void toggle_ai_mode();
     void apply_config(const NextermConfig& cfg);

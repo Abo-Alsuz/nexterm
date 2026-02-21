@@ -33,6 +33,13 @@ static gboolean on_key_press(GtkEventControllerKey*, guint keyval,
         return TRUE;
     }
 
+    guint paste_key; GdkModifierType paste_mods;
+    gtk_accelerator_parse(kb.paste.c_str(), &paste_key, &paste_mods);
+    if (keyval == paste_key && (mods & paste_mods) == paste_mods) {
+        vte_terminal_paste_clipboard(state->terminal->vte());
+        return TRUE;
+}
+
     return FALSE;
 }
 
